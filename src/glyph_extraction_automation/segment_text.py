@@ -42,7 +42,7 @@ def divide_text_into_segments(text):
     """Divide text into top and bottom halves, then into 8 segments each."""
     lines = text.split('\n')
     if len(lines) < 2:
-        raise ValueError("The text must have at least 2 lines to be divided into segments.")
+        raise ValueError("text must have 2 lines for segmentation.")
 
     mid = len(lines) // 2
     top_half = lines[:mid]
